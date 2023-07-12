@@ -79,6 +79,11 @@ return {
     },
     opts = {
       defaults = {
+        layout_strategy = "center",
+        layout_config = {
+          vertical = { height = 0.75, width = 0.5 },
+          -- other layout configuration here
+        },
         prompt_prefix = " ",
         selection_caret = " ",
         mappings = {

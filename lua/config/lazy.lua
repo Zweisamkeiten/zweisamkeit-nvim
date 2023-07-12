@@ -24,6 +24,8 @@ require("lazy").setup({
     { import = "extras.coding.yanky" },
 
     { import = "extras.editor.flash" },
+
+    { import = "extras.formatting.prettier" },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.

@@ -20,6 +20,8 @@ require("lazy").setup({
     -- import my lsp configuration
     { import = "langs" },
 
+    -- import my extras configuration
+    { import = "extras.editor.flash" },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.

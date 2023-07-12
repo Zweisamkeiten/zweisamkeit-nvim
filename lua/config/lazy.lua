@@ -21,6 +21,8 @@ require("lazy").setup({
     { import = "langs" },
 
     -- import my extras configuration
+    { import = "extras.coding.yanky" },
+
     { import = "extras.editor.flash" },
   },
   defaults = {

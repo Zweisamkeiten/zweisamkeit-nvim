@@ -82,6 +82,7 @@ return {
         layout_strategy = "center",
         layout_config = {
           vertical = { height = 0.75, width = 0.5 },
+          center = { prompt_position = "bottom" },
           -- other layout configuration here
         },
         prompt_prefix = " ",

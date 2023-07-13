@@ -23,8 +23,6 @@ require("lazy").setup({
     -- import my extras configuration
     { import = "extras.coding.yanky" },
 
-    { import = "extras.editor.flash" },
-
     { import = "extras.formatting.prettier" },
 
     { import = "extras.util.project" },

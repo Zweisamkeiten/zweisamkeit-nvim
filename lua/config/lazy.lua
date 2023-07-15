@@ -22,6 +22,7 @@ require("lazy").setup({
 
     -- import my extras configuration
     { import = "extras.coding.yanky" },
+    { import = "extras.coding.neogen" },
 
     { import = "extras.formatting.prettier" },
 

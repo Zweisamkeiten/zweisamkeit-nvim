@@ -59,3 +59,4 @@ vim.g.markdown_recommended_style = 0
 -- Add any additional options here
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
+opt.foldlevel = 99

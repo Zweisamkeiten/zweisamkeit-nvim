@@ -64,4 +64,15 @@ return {
     opts = {},
     keys = { { "<leader>cv", "<cmd>:VenvSelect<cr>", desc = "Select VirtualEnv" } },
   },
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    opts = function(_, opts)
+      if type(opts.sources) == "table" then
+        local nls = require("null-ls")
+        vim.list_extend({
+          nls.builtins.formatting.black,
+        }, opts.sources)
+      end
+    end,
+  },
 }

@@ -56,6 +56,9 @@ return {
           root_dir = function(...)
             -- using a root .clang-format or .clang-tidy file messes up projects, so remove them
             return require("lspconfig.util").root_pattern(
+              ".clangd",
+              ".clang-tidy",
+              ".clang-format",
               "compile_commands.json",
               "compile_flags.txt",
               "configure.ac",

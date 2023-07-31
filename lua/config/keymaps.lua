@@ -168,3 +168,6 @@ map("t", "<C-h>", "<BACKSPACE>", { desc = "<C-h> in terminal mode", remap = true
 -- Mini Comment
 map("n", "<M-;>", function() return MiniComment.operator() .. '_' end, { expr = true, desc = "Comment the line" })
 map("x", "<M-;>", ":<c-u>lua MiniComment.operator('visual')<cr>", { desc = "Comment selection" })
+
+-- Terminal
+map("n", "<leader>tt", ":<c-u>split | resize 20 | term<cr>a", { desc = "Terminal (cwd)" })

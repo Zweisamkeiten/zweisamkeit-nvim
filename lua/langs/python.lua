@@ -69,9 +69,9 @@ return {
     opts = function(_, opts)
       if type(opts.sources) == "table" then
         local nls = require("null-ls")
-        vim.list_extend({
+        vim.list_extend(opts.sources, {
           nls.builtins.formatting.black,
-        }, opts.sources)
+        })
       end
     end,
   },

@@ -40,7 +40,7 @@ local lsp = {
     return msg
   end,
   icon = ":",
-  color = { fg = "#c678dd", gui = "bold" },
+  color = { fg = "#7dcfff", gui = "bold" },
 }
 
 return {
@@ -48,8 +48,7 @@ return {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
     opts = function(_, opts)
-      table.insert(opts.sections.lualine_x, lsp)
-      opts.sections.lualine_z = { progress }
+      opts.sections.lualine_z = { lsp }
     end,
   },
 }

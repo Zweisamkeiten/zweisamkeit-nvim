@@ -171,3 +171,9 @@ map("x", "<M-;>", ":<c-u>lua MiniComment.operator('visual')<cr>", { desc = "Comm
 
 -- Terminal
 map("n", "<leader>tt", ":<c-u>split | resize 20 | term<cr>a", { desc = "Terminal (cwd)" })
+
+-- accelerated_jk
+map("n", "j", '<Cmd>lua require "accelerated-jk".move_to("j")<CR>', {})
+map("n", "<C-n>", '<Cmd>lua require "accelerated-jk".move_to("j")<CR>', {})
+map("n", "k", '<Cmd>lua require "accelerated-jk".move_to("k")<CR>', {})
+map("n", "<C-p>", '<Cmd>lua require "accelerated-jk".move_to("k")<CR>', {})

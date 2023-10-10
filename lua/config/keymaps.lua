@@ -177,3 +177,6 @@ map("n", "j", '<Cmd>lua require "accelerated-jk".move_to("j")<CR>', {})
 map("n", "<C-n>", '<Cmd>lua require "accelerated-jk".move_to("j")<CR>', {})
 map("n", "k", '<Cmd>lua require "accelerated-jk".move_to("k")<CR>', {})
 map("n", "<C-p>", '<Cmd>lua require "accelerated-jk".move_to("k")<CR>', {})
+
+map("n", "gUaw", 'gUaw<esc>e', { desc = "Upper case word"})
+map("n", "guaw", 'guaw<esc>e', { desc = "Down case word"})

@@ -11,27 +11,18 @@ require("lazy").setup({
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import any extras modules here
-    -- { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang" },
-    -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
     -- `conform.nvim` & `nvim-line` are now the default formatter and linters in LazyVim
     { import = "lazyvim.plugins.extras.lsp.none-ls" },
     -- import/override with your plugins
-    -- { import = "plugins" },
-    -- { import = "plugins.lsp" },
     { import = "plugins.lualine" },
 
     -- import my lsp configuration
     { import = "langs.haskell" },
 
     -- import my extras configuration
-    { import = "extras.coding.yanky" },
     { import = "extras.coding.neogen" },
     { import = "extras.editor.move" },
-    --
-    -- { import = "extras.formatting.prettier" },
-    --
-    -- { import = "extras.util.project" },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.

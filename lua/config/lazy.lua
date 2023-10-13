@@ -11,9 +11,19 @@ require("lazy").setup({
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import any extras modules here
+    { import = "lazyvim.plugins.extras.coding.yanky" },
     { import = "lazyvim.plugins.extras.lang" },
+    { import = "lazyvim.plugins.extras.dap" },
+    -- 用于浏览和快速导航的代码大纲窗口
+    { import = "lazyvim.plugins.extras.editor.aerial" },
+    -- 跳转
+    { import = "lazyvim.plugins.extras.editor.leap" },
+    -- 状态栏显示面包屑
+    { import = "lazyvim.plugins.extras.editor.navic" },
     -- `conform.nvim` & `nvim-line` are now the default formatter and linters in LazyVim
     { import = "lazyvim.plugins.extras.lsp.none-ls" },
+    -- Project
+    { import = "lazyvim.plugins.extras.util.project" },
     -- import/override with your plugins
     { import = "plugins.lualine" },
 

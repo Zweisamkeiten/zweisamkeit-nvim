@@ -26,6 +26,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.util.project" },
     -- import/override with your plugins
     { import = "plugins.lualine" },
+    { import = "plugins.colorscheme" },
 
     -- import my lsp configuration
     { import = "langs.haskell" },

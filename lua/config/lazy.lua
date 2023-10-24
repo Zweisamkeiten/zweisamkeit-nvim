@@ -27,6 +27,7 @@ require("lazy").setup({
     -- import/override with your plugins
     { import = "plugins.lualine" },
     { import = "plugins.colorscheme" },
+    { import = "plugins.barbecue" },
 
     -- import my lsp configuration
     { import = "langs.haskell" },

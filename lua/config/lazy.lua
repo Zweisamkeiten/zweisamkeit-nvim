@@ -11,9 +11,6 @@ require("lazy").setup({
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import any extras modules here
-    { import = "lazyvim.plugins.extras.coding.yanky" },
-    { import = "lazyvim.plugins.extras.lang" },
-    { import = "lazyvim.plugins.extras.dap" },
     -- 用于浏览和快速导航的代码大纲窗口
     { import = "lazyvim.plugins.extras.editor.aerial" },
     -- 跳转

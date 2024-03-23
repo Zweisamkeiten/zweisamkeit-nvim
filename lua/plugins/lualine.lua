@@ -3,17 +3,28 @@ local lualine = require('lualine')
 -- Color table for highlights
 -- stylua: ignore
 local colors = {
-  bg       = '#202328',
-  fg       = '#bbc2cf',
-  yellow   = '#ECBE7B',
-  cyan     = '#008080',
-  darkblue = '#081633',
+  -- bg       = '#202328',
+  -- fg       = '#bbc2cf',
+  -- yellow   = '#ECBE7B',
+  -- cyan     = '#008080',
+  -- darkblue = '#081633',
+  -- green    = '#98be65',
+  -- orange   = '#FF8800',
+  -- violet   = '#a9a1e1',
+  -- magenta  = '#c678dd',
+  -- blue     = '#51afef',
+  -- red      = '#ec5f67',
+  bg       = '#1F1F28',
+  fg       = '#DCD7BA',
+  yellow   = '#E6C384',
+  cyan     = '#7FB4CA',
+  darkblue = '#98BB6C',
   green    = '#98be65',
-  orange   = '#FF8800',
-  violet   = '#a9a1e1',
-  magenta  = '#c678dd',
-  blue     = '#51afef',
-  red      = '#ec5f67',
+  orange   = '#FFA066',
+  violet   = '#957FB8',
+  magenta  = '#D27E99',
+  blue     = '#7E9CD8',
+  red      = '#E46876',
 }
 
 local conditions = {
@@ -133,6 +144,19 @@ ins_left { 'location' }
 
 ins_left { 'progress', color = { fg = colors.fg, gui = 'bold' } }
 
+ins_left { 'selectioncount' }
+
+local function show_macro_recording()
+    local recording_register = vim.fn.reg_recording()
+    if recording_register == "" then
+        return ""
+    else
+        return "@" .. recording_register
+    end
+end
+
+ins_left { show_macro_recording, color = { fg = colors.cyan, gui = 'bold'} }
+
 ins_left {
   'diagnostics',
   sources = { 'nvim_diagnostic' },
@@ -169,8 +193,8 @@ ins_left {
     end
     return msg
   end,
-  icon = ' LSP:',
-  color = { fg = '#ffffff', gui = 'bold' },
+  icon = ':',
+  color = { fg = colors.green, gui = 'bold' },
 }
 
 -- Add components to right sections

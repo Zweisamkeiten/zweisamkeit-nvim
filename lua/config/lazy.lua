@@ -27,7 +27,6 @@ require("lazy").setup({
     { import = "plugins.barbecue" },
 
     -- import my lsp configuration
-    { import = "langs.haskell" },
 
     -- import my extras configuration
     { import = "extras.coding.neogen" },

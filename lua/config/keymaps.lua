@@ -8,8 +8,8 @@ end
 map("t", "<C-h>", "<BACKSPACE>", { desc = "<C-h> in terminal mode", remap = true })
 
 -- Mini Comment
-map("n", "<M-;>", "gcc", { desc = "Comment Line", remap = true })
-map("x", "<M-;>", "gc", { desc = "Comment selection", remap = true })
+map("n", "<M-;>", function() return MiniComment.operator() .. '_' end, { expr = true, desc = "Comment the line" })
+map("x", "<M-;>", function() return MiniComment.operator() end, { expr = true, desc = "Comment selection" })
 
 -- Terminal
 map("n", "<leader>tt", ":<c-u>split | resize 20 | term<cr>a", { desc = "Terminal (cwd)" })

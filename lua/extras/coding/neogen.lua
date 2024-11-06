@@ -3,7 +3,7 @@ return {
     "danymat/neogen",
     dependencies = "nvim-treesitter/nvim-treesitter",
     config = function()
-      require("neogen").setup({ snippet_engine = "luasnip" })
+      require("neogen").setup({ snippet_engine = "nvim" })
     end,
     keys = {
       { "\\ga", ":lua require('neogen').generate()<CR>", mode = { "n" }, desc = "generate file doc" },

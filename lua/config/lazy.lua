@@ -22,6 +22,7 @@ require("lazy").setup({
     { import = "plugins.lualine" },
 
     -- import my lsp configuration
+    { import = "langs.java" },
 
     -- import my extras configuration
     { import = "extras.coding.neogen" },
